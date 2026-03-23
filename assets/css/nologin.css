@@ -1,0 +1,377 @@
+/* General Styling */
+:root {
+    --accent-color: #7c3aed;
+    --bg-primary: #1a1a1a;
+    --bg-secondary: #252525;
+    --text-primary: #ffffff;
+    --text-secondary: #718096;
+    --border-color: #e2e8f0;
+    --error-color: #e53e3e;
+  }
+  
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: var(--text-primary);
+    line-height: 1.5;
+    background-color: var(--bg-primary);
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+  }
+  
+  .privacy-container {
+    max-width: 800px;
+    margin: 2rem auto;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    color: var(--text-primary);
+  }
+  
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  h3 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+  }
+  
+  h4 {
+    font-size: 1.125rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+  
+  a {
+    color: var(--accent-color);
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  .text-secondary {
+    color: var(--text-secondary);
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  /* Buttons */
+  .btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: var(--accent-color);
+    color: white;
+    border: none;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  .btn:hover {
+    opacity: 0.9;
+    text-decoration: none;
+  }
+  
+  .btn-primary {
+    background-color: var(--accent-color);
+    color: white;
+  }
+  
+  .back-btn {
+    background-color: transparent;
+    border: 1px solid var(--accent-color);
+    color: var(--accent-color);
+  }
+  
+  .delete-btn {
+    background-color: var(--error-color);
+  }
+  
+  .full-width {
+    width: 100%;
+  }
+  
+  /* Forms */
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  .form-control {
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #252525;
+    background-color: white;
+    border: 1px solid var(--border-color);
+    border-radius: 0.25rem;
+    box-sizing: border-box;
+  }
+  
+  .form-actions {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+  }
+  
+  /* Flash Messages */
+  .flash-message {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 0.25rem;
+  }
+  
+  .flash-message.success {
+    background-color: #c6f6d5;
+    color: #2f855a;
+  }
+  
+  .flash-message.error {
+    background-color: #fed7d7;
+    color: #c53030;
+  }
+  
+  /* Hero Section */
+  .hero-section {
+    background-position: center;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 4rem 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .hero-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: white;
+  }
+  
+  .hero-section p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+  }
+  
+  /* Featured Section */
+  .featured-section {
+    padding: 2rem 0;
+  }
+  
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  /* KOL Card */
+  .kol-card {
+    background-color: var(--bg-secondary);
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  .kol-avatar-container {
+    height: 200px;
+    overflow: hidden;
+  }
+  
+  .kol-avatar {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .kol-info {
+    padding: 1.5rem;
+  }
+  
+  .bio-text {
+    margin-bottom: 1rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  
+  .stats-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+  }
+  
+  .total-bookings {
+    font-weight: 700;
+    color: var(--accent-color);
+  }
+  
+  .category-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .category-tag {
+    background-color: rgba(90, 103, 216, 0.1);
+    color: var(--accent-color);
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+  }
+  
+  .profile-container {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .status-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+    padding: 0.25rem 0.5rem;
+    background-color: rgba(90, 103, 216, 0.1);
+    color: var(--accent-color);
+    border-radius: 9999px;
+    font-size: 0.75rem;
+  }
+  
+  .status-role {
+    background-color: rgba(245, 158, 11, 0.1);
+    color: #f59e0b;
+  }
+  
+  /* Why Choose Us Section */
+  .why-choose-us {
+    background-color: var(--bg-secondary);
+    padding: 4rem 0;
+  }
+  
+  .icon-circle {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background-color: rgba(90, 103, 216, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem;
+  }
+  
+  /* Content Box */
+  .content-box {
+    background-color: var(--bg-secondary);
+    padding: 2rem;
+    border-radius: 0.5rem;
+  }
+  
+  .terms-section {
+    margin-bottom: 3rem;
+  }
+  
+  .intro {
+    margin-bottom: 2rem;
+  }
+  
+  /* Services Management */
+  .service-container {
+    max-width: 800px;
+    margin: 2rem auto;
+  }
+  
+  .service-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  
+  .service-form-container {
+    display: none;
+    margin-bottom: 2rem;
+  }
+  
+  .service-grid {
+    display: grid;
+    gap: 1.5rem;
+  }
+  
+  .service-card {
+    background-color: var(--bg-secondary);
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    position: relative;
+  }
+  
+  .service-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+  }
+  
+  .service-price {
+    color: var(--accent-color);
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+  }
+  
+  .service-actions {
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  .service-description {
+    margin-bottom: 1rem;
+  }
+  
+  .service-stats {
+    display: flex;
+    gap: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border-color);
+    color: var(--text-secondary);
+  }
+  
+  .inline-form {
+    display: inline;
+  }
+  
+  .empty-message {
+    text-align: center;
+    color: var(--text-secondary);
+  }
+  
+  /* Privacy Policy */
+  ul {
+    list-style: disc;
+    margin-left: 1.5rem;
+    margin-bottom: 1rem;
+  }

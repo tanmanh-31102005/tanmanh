@@ -1,0 +1,186 @@
+/* Container styling */
+.container {
+    max-width: 1200px; 
+    margin: 2rem auto;
+}
+
+.header-container {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    margin-bottom: 2rem;
+}
+
+.back-btn {
+    background-color: transparent; 
+    border: 1px solid var(--accent-color);
+}
+
+/* Filter section */
+.filter-section {
+    background-color: var(--bg-secondary);
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.filter-form {
+    display: grid; 
+    gap: 1rem; 
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.filter-form .form-group {
+    margin: 0;
+}
+
+.filter-form-button {
+    margin: 0; 
+    display: flex; 
+    align-items: flex-end;
+}
+
+.filter-form-button button {
+    width: 100%;
+}
+
+/* Table styling */
+.users-table-container {
+    background-color: var(--bg-secondary); 
+    border-radius: 0.5rem; 
+    overflow-x: auto;
+    overflow-y: visible; /* Đảm bảo dropdown không bị cắt */
+    position: relative;
+    padding-bottom: 100px; /* Thêm khoảng đệm cho dropdown */
+}
+
+.users-table {
+    width: 100%; 
+    border-collapse: collapse;
+    min-width: 800px;
+}
+
+.users-table th {
+    padding: 1rem; 
+    text-align: left;
+}
+
+.users-table th:not(:first-child) {
+    text-align: center;
+}
+
+.users-table tr {
+    border-top: 1px solid var(--border-color);
+}
+
+.users-table td {
+    padding: 1rem;
+}
+
+.users-table td:not(:first-child) {
+    text-align: center;
+}
+
+/* User info styling */
+.user-info {
+    display: flex; 
+    align-items: center; 
+    gap: 1rem;
+}
+
+.user-avatar {
+    width: 40px; 
+    height: 40px; 
+    border-radius: 50%; 
+    object-fit: cover;
+}
+
+.user-email {
+    color: var(--text-secondary);
+}
+
+/* Badge styling */
+.role-badge, .status-badge {
+    display: inline-block;
+    padding: 0.25rem 0.5rem;
+    border-radius: 1rem;
+    font-size: 0.875rem;
+    color: white;
+}
+
+.role-badge {
+    background-color: var(--accent-color);
+}
+
+.status-badge-active {
+    background-color: #10b981;
+}
+
+.status-badge-pending {
+    background-color: #f59e0b;
+}
+
+.status-badge-locked {
+    background-color: #ef4444;
+}
+
+/* Dropdown styling */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-btn {
+    background-color: transparent; 
+    border: 1px solid var(--border-color);
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    right: 0;
+    min-width: 160px;
+    background-color: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: 0.375rem;
+    padding: 0.5rem;
+    z-index: 1000; /* Tăng z-index */
+}
+
+.dropdown-item {
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    text-align: left;
+    background: none;
+    border: none;
+    color: var(--text-primary);
+    cursor: pointer;
+    border-radius: 0.25rem;
+}
+
+.dropdown-item-danger {
+    color: var(--error-color);
+}
+
+.dropdown-item-success {
+    color: var(--success-color);
+}
+
+/* Pagination */
+.pagination {
+    padding: 1rem; 
+    border-top: 1px solid var(--border-color); 
+    text-align: center;
+}
+
+.pagination .btn {
+    margin: 0 0.25rem;
+}
+
+.pagination .btn-active {
+    background-color: var(--accent-color);
+}
+
+.pagination-ellipsis {
+    margin: 0 0.5rem;
+}

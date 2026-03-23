@@ -1,0 +1,192 @@
+/* Admin panel styles */
+
+/* Container styles */
+.container {
+    max-width: 1200px;
+    margin: 2rem auto;
+}
+
+/* Header container styles */
+.container > div:first-of-type {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+/* Back button */
+.container > div:first-of-type .btn {
+    background-color: transparent;
+    border: 1px solid var(--accent-color);
+}
+
+/* Card-like section */
+.container > div[style*="background-color: var(--bg-secondary)"] {
+    background-color: var(--bg-secondary);
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+/* Form grid */
+form[method="GET"] {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+form[method="GET"] .form-group {
+    margin: 0;
+}
+
+form[method="GET"] .form-group:last-child {
+    display: flex;
+    align-items: flex-end;
+}
+
+form[method="GET"] .form-group:last-child .btn {
+    width: 100%;
+}
+
+/* Table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead th {
+    padding: 1rem;
+    text-align: left;
+}
+
+thead th:not(:first-child) {
+    text-align: center;
+}
+
+tbody tr {
+    border-top: 1px solid var(--border-color);
+}
+
+tbody td {
+    padding: 1rem;
+}
+
+/* User info display */
+td > div[style*="display: flex; align-items: center"] {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+td > div[style*="display: flex"] img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+td > div[style*="display: flex"] div:last-child div:last-child {
+    color: var(--text-secondary);
+}
+
+/* Badge styles */
+td span[style*="display: inline-block"] {
+    display: inline-block;
+    padding: 0.25rem 0.5rem;
+    border-radius: 1rem;
+    font-size: 0.875rem;
+    color: white;
+}
+
+/* Role badge */
+td:nth-child(2) span {
+    background-color: var(--accent-color);
+}
+
+/* Status badges */
+td:nth-child(3) span[style*="background-color: #10b981"] {
+    background-color: #10b981;
+}
+
+td:nth-child(3) span[style*="background-color: #f59e0b"] {
+    background-color: #f59e0b;
+}
+
+td:nth-child(3) span[style*="background-color: #ef4444"] {
+    background-color: #ef4444;
+}
+
+/* Dropdown styles */
+.dropdown {
+    position: relative;
+}
+
+.dropdown .btn {
+    background-color: transparent;
+    border: 1px solid var(--border-color);
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    right: 0;
+    min-width: 160px;
+    background-color: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: 0.375rem;
+    padding: 0.5rem;
+    z-index: 100;
+}
+
+.dropdown-item {
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    text-align: left;
+    background: none;
+    border: none;
+    color: var(--text-primary);
+    cursor: pointer;
+    border-radius: 0.25rem;
+}
+
+/* Danger button */
+.dropdown-item[style*="color: var(--error-color)"] {
+    color: var(--error-color);
+}
+
+.dropdown-item[style*="color: var(--error-color)"]:hover {
+    background-color: var(--error-color);
+    color: white;
+}
+
+/* Success button */
+.dropdown-item[style*="color: var(--success-color)"] {
+    color: var(--success-color);
+}
+
+.dropdown-item[style*="color: var(--success-color)"]:hover {
+    background-color: var(--success-color);
+    color: white;
+}
+
+/* Pagination */
+div[style*="border-top: 1px solid var(--border-color); text-align: center"] {
+    padding: 1rem;
+    border-top: 1px solid var(--border-color);
+    text-align: center;
+}
+
+.pagination .btn {
+    margin: 0 0.25rem;
+}
+
+.pagination .btn.active {
+    background-color: var(--accent-color);
+}
+
+/* Setup page specific */
+.setup-result {
+    font-family: monospace;
+    white-space: pre-line;
+}

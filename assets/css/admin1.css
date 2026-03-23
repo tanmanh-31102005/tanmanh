@@ -1,0 +1,379 @@
+/* Reset for all elements */
+* {
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+/* Base admin styles */
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    overflow-x: hidden;
+}
+
+.dashboard-container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    overflow-x: hidden;
+}
+
+.categories-container {
+    max-width: 1000px;
+    width: 100%;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    overflow-x: hidden;
+}
+
+/* Header styles */
+.header-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+/* Button styles */
+.btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: var(--accent-color);
+    color: white;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 0.875rem;
+    white-space: nowrap;
+    margin-bottom: 0.5rem;
+}
+
+.btn-outline {
+    background-color: transparent;
+    border: 1px solid var(--accent-color);
+}
+
+.btn-error {
+    background-color: var(--error-color);
+}
+
+.btn-flex {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 1.5rem;
+}
+
+/* Card styles */
+.card {
+    background-color: var(--bg-secondary);
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.card-title {
+    margin-bottom: 0.5rem;
+    font-size: clamp(1rem, 2vw, 1.25rem);
+    word-break: break-word;
+}
+
+.card-value {
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    color: var(--accent-color);
+    word-break: break-word;
+}
+
+.card-value-success {
+    color: #10b981;
+}
+
+.card-value-warning {
+    color: #f59e0b;
+}
+
+/* Stats grid */
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+/* Content grid */
+.content-grid {
+    display: grid;
+    gap: 2rem;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/* Table styles */
+.table-container {
+    background-color: var(--bg-secondary);
+    border-radius: 0.5rem;
+    overflow-x: auto;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 600px; /* Minimum width to prevent excessive squeezing */
+}
+
+.table th,
+.table td {
+    padding: 1rem;
+    word-break: break-word;
+}
+
+.table th {
+    text-align: left;
+    white-space: nowrap;
+}
+
+.table td.center {
+    text-align: center;
+}
+
+.table td.right {
+    text-align: right;
+}
+
+.table tr {
+    border-top: 1px solid var(--border-color);
+}
+
+.table-empty {
+    padding: 2rem;
+    text-align: center;
+    color: var(--text-secondary);
+}
+
+/* Status badges */
+.badge {
+    display: inline-block;
+    padding: 0.25rem 0.5rem;
+    border-radius: 1rem;
+    font-size: 0.75rem;
+    color: white;
+    white-space: nowrap;
+}
+
+.badge-success {
+    background-color: #10b981;
+}
+
+.badge-warning {
+    background-color: #f59e0b;
+}
+
+.badge-error {
+    background-color: #ef4444;
+}
+
+.badge-primary {
+    background-color: var(--accent-color);
+}
+
+/* User info */
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.user-avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.user-name {
+    font-weight: bold;
+    word-break: break-word;
+}
+
+.user-meta {
+    color: var(--text-secondary);
+    word-break: break-word;
+    font-size: 0.875rem;
+}
+
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    overflow-y: auto;
+}
+
+.modal-content {
+    position: relative;
+    margin: 2rem auto;
+    width: 90%;
+    max-width: 500px;
+    background-color: var(--bg-secondary);
+    border-radius: 0.5rem;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+@media (max-width: 767px) {
+    .modal-content {
+        padding: 1.5rem;
+        margin: 1rem auto;
+        width: 95%;
+    }
+}
+
+.modal-title {
+    margin-bottom: 1.5rem;
+    word-break: break-word;
+}
+
+.modal-footer {
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-end;
+    margin-top: 1.5rem;
+    flex-wrap: wrap;
+}
+
+/* Form styles */
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-control {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid var(--border-color);
+    border-radius: 0.25rem;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    box-sizing: border-box;
+}
+
+/* Flash messages */
+.flash-message {
+    padding: 1rem;
+    border-radius: 0.25rem;
+    margin-bottom: 1rem;
+    word-break: break-word;
+}
+
+.flash-message.error {
+    background-color: rgba(239, 68, 68, 0.1);
+    color: #ef4444;
+    border: 1px solid #ef4444;
+}
+
+.flash-message.success {
+    background-color: rgba(16, 185, 129, 0.1);
+    color: #10b981;
+    border: 1px solid #10b981;
+}
+
+/* Responsive adjustments */
+@media (max-width: 991px) {
+    .stats-grid {
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    }
+}
+
+@media (max-width: 767px) {
+    .header-flex {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .header-flex h2 {
+        margin-bottom: 0.5rem;
+    }
+    
+    .dashboard-container h1 {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .stats-grid {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 1rem;
+    }
+    
+    .card {
+        padding: 1rem;
+    }
+    
+    .content-grid {
+        gap: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .stats-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .dashboard-container, 
+    .categories-container, 
+    .container {
+        padding: 0;
+    }
+    
+    .content-grid > div {
+        padding: 0 1rem;
+    }
+    
+    .table-container {
+        border-radius: 0;
+        width: 100vw;
+        position: relative;
+        left: 50%;
+        right: 50%;
+        margin-left: -50vw;
+        margin-right: -50vw;
+    }
+    
+    .btn-flex {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0.5rem;
+        padding: 0 1rem;
+    }
+    
+    .btn-flex .btn {
+        text-align: center;
+        width: 100%;
+    }
+    
+    .user-info {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .header-flex {
+        padding: 0 1rem;
+    }
+}

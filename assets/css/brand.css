@@ -1,0 +1,263 @@
+/* Profile card styles */
+.profile-container {
+    max-width: 1000px;
+    margin: 2rem auto;
+}
+
+.back-button {
+    margin-bottom: 2rem;
+}
+
+.back-button .btn {
+    background-color: transparent;
+    border: 1px solid var(--accent-color);
+}
+
+.profile-card {
+    background-color: var(--bg-secondary);
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.profile-header {
+    height: 200px;
+    background-color: var(--accent-color);
+    position: relative;
+}
+
+.profile-avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    bottom: -75px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 5px solid var(--bg-secondary);
+}
+
+.profile-info {
+    padding: 5rem 2rem 2rem;
+    text-align: center;
+}
+
+.profile-name {
+    margin-bottom: 0.5rem;
+}
+
+.profile-industry {
+    color: var(--text-secondary);
+    margin-bottom: 1rem;
+}
+
+.profile-followers {
+    color: var(--accent-color);
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+/* Message styles */
+.message-container {
+    margin: 2rem 0;
+}
+
+/* Service booking styles */
+.booking-section {
+    margin: 2rem 0;
+}
+
+.booking-title {
+    margin-bottom: 2rem;
+}
+
+.services-grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.service-card {
+    display: block;
+    padding: 1.5rem;
+    border: 2px solid var(--border-color);
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.service-title {
+    margin-bottom: 0.5rem;
+}
+
+.service-price {
+    color: var(--accent-color);
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.service-description {
+    color: var(--text-secondary);
+}
+
+.booking-form-row {
+    margin: 2rem 0;
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.form-group {
+    margin: 0;
+}
+
+.total-price {
+    text-align: right;
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    display: none;
+}
+
+.total-price-value {
+    color: var(--accent-color);
+    font-weight: bold;
+}
+
+.full-width-button {
+    width: 100%;
+}
+
+/* Search page styles */
+.search-container {
+    max-width: 1000px;
+    margin: 2rem auto;
+}
+
+.search-title {
+    margin-bottom: 2rem;
+}
+
+.search-form-container {
+    background-color: var(--bg-secondary);
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.search-form-grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.search-button-container {
+    margin: 0;
+    display: flex;
+    align-items: flex-end;
+}
+
+.search-no-results {
+    text-align: center;
+    color: var(--text-secondary);
+}
+
+.search-results-grid {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.kol-card {
+    background-color: var(--bg-secondary);
+    border-radius: 0.5rem;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.kol-image-container {
+    position: relative;
+    padding-top: 100%;
+}
+
+.kol-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-color: var(--bg-primary);
+}
+
+.kol-info {
+    padding: 1.5rem;
+}
+
+.kol-name {
+    margin-bottom: 0.5rem;
+}
+
+.kol-industry {
+    color: var(--text-secondary);
+    margin-bottom: 0.5rem;
+}
+
+.kol-categories {
+    margin-bottom: 1rem;
+}
+
+.category-tag {
+    display: inline-block;
+    padding: 0.25rem 0.5rem;
+    background-color: var(--accent-color);
+    color: white;
+    border-radius: 1rem;
+    font-size: 0.875rem;
+    margin: 0.25rem;
+}
+
+.kol-bio {
+    color: var(--text-secondary);
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+
+.kol-stats {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border-color);
+    margin-bottom: 1rem;
+}
+
+.kol-followers-count {
+    color: var(--accent-color);
+}
+
+.kol-followers-label {
+    color: var(--text-secondary);
+}
+
+.kol-rating-value {
+    color: var(--accent-color);
+}
+
+.kol-rating-max {
+    color: var(--text-secondary);
+}
+
+.profile-link {
+    display: block;
+    text-align: center;
+}
+
+
+
+.service-card:hover {
+    border-color: var(--accent-color);
+    transition: border-color 0.3s ease;
+}

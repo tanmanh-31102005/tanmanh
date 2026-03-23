@@ -1,0 +1,320 @@
+/* General container styles */
+.container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem; /* Add padding for small screens */
+}
+
+.container.narrow {
+    max-width: 800px;
+}
+
+/* Responsive container */
+@media (max-width: 576px) {
+    .container {
+        margin: 1rem auto;
+        padding: 0 0.5rem;
+    }
+    .container.narrow {
+        max-width: 100%;
+    }
+}
+
+/* Header section with title and back button */
+.header-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    flex-wrap: wrap; /* Allow wrapping on small screens */
+}
+
+/* Responsive header */
+@media (max-width: 576px) {
+    .header-section {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+    .header-section h1 {
+        font-size: 1.5rem; /* Smaller heading on mobile */
+    }
+    .back-btn {
+        width: 100%; /* Full-width button on mobile */
+        text-align: center;
+    }
+}
+
+/* Back button */
+.back-btn {
+    background-color: transparent;
+    border: 1px solid var(--accent-color);
+}
+
+/* Filter section */
+.filter-section {
+    background-color: var(--bg-secondary);
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.filter-form {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.filter-form .form-group {
+    margin: 0;
+}
+
+.filter-form-button {
+    margin: 0;
+    display: flex;
+    align-items: flex-end;
+}
+
+.filter-form-button button {
+    width: 100%;
+}
+
+/* Settings form */
+.settings-form {
+    background-color: var(--bg-secondary);
+    padding: 2rem;
+    border-radius: 0.5rem;
+}
+
+/* Form group */
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.form-group textarea {
+    resize: vertical; /* Allow vertical resizing only */
+}
+
+/* Responsive form */
+@media (max-width: 576px) {
+    .settings-form {
+        padding: 1rem;
+    }
+    .form-group {
+        margin-bottom: 1rem;
+    }
+    .form-group label {
+        font-size: 0.9rem;
+    }
+    .form-group input,
+    .form-group textarea {
+        font-size: 0.875rem;
+    }
+    .settings-form button {
+        font-size: 0.9rem;
+        padding: 0.75rem;
+    }
+}
+
+/* Current image preview */
+.current-image {
+    margin: 1rem 0;
+}
+
+.current-image img {
+    max-width: 300px;
+    border-radius: 0.5rem;
+    width: 100%; /* Ensure image is responsive */
+    height: auto;
+}
+
+/* Responsive image */
+@media (max-width: 576px) {
+    .current-image img {
+        max-width: 100%;
+    }
+}
+
+/* Hint text */
+.hint-text {
+    color: var(--text-secondary);
+    font-size: 0.875rem;
+}
+
+/* Responsive hint text */
+@media (max-width: 576px) {
+    .hint-text {
+        font-size: 0.75rem;
+    }
+}
+
+/* CKEditor adjustments */
+.ck-editor__editable {
+    min-height: 150px;
+}
+
+/* Responsive CKEditor */
+@media (max-width: 576px) {
+    .ck-editor__editable {
+        min-height: 100px;
+    }
+    .ck-toolbar {
+        flex-wrap: wrap; /* Allow toolbar buttons to wrap */
+    }
+}
+
+/* Button */
+.settings-form button {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+}
+
+/* Flash message */
+.flash-message {
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.flash-message.error {
+    background-color: var(--error-color);
+    color: white;
+}
+
+/* Responsive flash message */
+@media (max-width: 576px) {
+    .flash-message {
+        font-size: 0.875rem;
+        padding: 0.75rem;
+    }
+}
+
+/* User info styling (added for payments.php to match users.php) */
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.user-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Table styling (added for payments.php to match users.php) */
+.users-table-container {
+    background-color: var(--bg-secondary);
+    border-radius: 0.5rem;
+    overflow-x: auto;
+    overflow-y: visible;
+    position: relative;
+    padding-bottom: 100px;
+}
+
+.users-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 800px;
+}
+
+.users-table th {
+    padding: 1rem;
+    text-align: left;
+    background-color: var(--bg-secondary);
+    font-weight: 600;
+}
+
+.users-table th:not(:first-child) {
+    text-align: center;
+}
+
+.users-table tr {
+    border-top: 1px solid var(--border-color);
+    transition: background-color 0.2s ease;
+}
+
+.users-table tr:hover {
+    background-color: var(--bg-hover);
+}
+
+.users-table td {
+    padding: 1rem;
+}
+
+.users-table td:not(:first-child) {
+    text-align: center;
+}
+
+/* Badge styling */
+.status-badge {
+    display: inline-block;
+    padding: 0.25rem 0.5rem;
+    border-radius: 1rem;
+    font-size: 0.875rem;
+    color: white;
+}
+
+.status-badge-paid {
+    background-color: #10b981;
+}
+
+.status-badge-pending {
+    background-color: #f59e0b;
+}
+
+.status-badge-failed {
+    background-color: #ef4444;
+}
+
+/* Pagination */
+.pagination {
+    padding: 1rem;
+    border-top: 1px solid var(--border-color);
+    text-align: center;
+}
+
+.pagination .btn {
+    margin: 0 0.25rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    text-decoration: none;
+    color: var(--text-primary);
+    border: 1px solid var(--border-color);
+    transition: background-color 0.2s ease;
+}
+
+.pagination .btn:hover {
+    background-color: var(--bg-hover);
+}
+
+.pagination .btn-active {
+    background-color: var(--accent-color);
+    color: white;
+    border-color: var(--accent-color);
+}
+
+.pagination-ellipsis {
+    margin: 0 0.5rem;
+}
+
+/* Empty state */
+.empty-state {
+    text-align: center;
+    padding: 2rem;
+    color: var(--text-secondary);
+}

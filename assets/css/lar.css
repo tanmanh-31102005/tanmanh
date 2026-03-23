@@ -1,0 +1,64 @@
+/* Authentication form container */
+.auth-container {
+    max-width: 400px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: var(--bg-secondary);
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Form heading */
+.auth-heading {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* Form submit button container */
+.form-submit {
+    margin-top: 1.5rem;
+}
+
+/* Full-width button */
+.btn-full {
+    width: 100%;
+}
+
+/* Center text alignment */
+.text-center {
+    text-align: center;
+}
+
+/* Links container */
+.auth-links {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+/* Auth link style */
+.auth-link {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+/* Role selection container */
+.role-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+/* Role option label */
+.role-option {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+    border: 1px solid var(--border-color);
+    border-radius: 0.375rem;
+    cursor: pointer;
+}
+
+/* Space between radio button and text */
+.role-text {
+    margin-left: 0.5rem;
+}
