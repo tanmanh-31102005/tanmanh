@@ -1,0 +1,10 @@
+/vendor/
+/uploads/avatars/*
+!/uploads/avatars/.gitkeep
+/uploads/backgrounds/*
+!/uploads/backgrounds/.gitkeep
+.DS_Store
+Thumbs.db
+*.log
+.vscode/
+.idea/
